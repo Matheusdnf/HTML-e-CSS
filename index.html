@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo HTML E CSS</title>
+    <link rel="shortcutsss icon" href="icones/pica.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Colocando algumas coisas em prática</h1>
+    <hr><!---Linha horizontal-->
+    <p>Testando</p>
+    <p>Testando quebra de linha</p>
+    <p>Listinha de compras:<br> &lt;Bansssana&gt; <br> Biscoito <br> Gelatina
+    o da &rarr; <em><strong> é gay</strong></em> </p>
+    <p>Testando emojis</p>
+    <p>não ironicamente &sss#x1F913&#x1F44Cs <del><small><mark>Testando</mark></small><del> </p>
+    <h2><ins>Testando colocar imagens</ins></h2>
+    <p>testando tags h<sub>2</sub>0 <br> algum número elevado a 2 4<sup>2</sup></p>
+    <p><strong><del>abaixo será visto imagens:</del></strong></p>
+    <p><img src="png/logojv2.png" alt="skate">  <img src="png/logojv2.png" alt="logo java script"> </p>
+    <p><pre><code>
+void ler_telefone(char *telefone) {
+    int t;
+    //função inpirada na de @Claudio-Arauj
+    do {
+        printf("Digite o telefone com DDD:");
+        fgets(telefone, 15 , stdin);
+        //remover o //n, função pega de @Lleusxam
+        telefone[strlen(telefone)-1]=0;
+        t = valida_telefone(telefone);
+        if (t == 0) {
+        printf("Telefone inválido,Certifiquisse de que tenha colocado DDD ou só números!\n");
+    }
+} while (t != 1);
+}
+    </code></pre></p>
+    <p><q>teste de citação comum</q></p>
+    <p>Citação Direta </p>
+    <blockquote cite="https://pt.stackoverflow.com/questions/330063/qual-%C3%A9-a-diferen%C3%A7a-entre-as-tags-q-blockquote-e-cite-no-html-e-como-as-u">
+        Em tese cada um pode ser usado quase para o mesmo fim, mas não deveria, o uso correto é semântico e indica a intenção do que está fazendo. Note que a apresentação pode ser personalizada até para serem iguais (ou quase), ainda que faça pouco sentido.
+    </blockquote>
+    <p>teste de abreviação <br> Testando um nome como teste:<abbr title="TUA MÂE NA MINHA CAMA">TMNC</abbr> </p>
+    <p>Testando listas</p>
+    <p>
+        <h2>lista ordenada</h2>
+        <ol type="1" start="1">
+            <li>Vitoria</li>
+            Irá comprar 
+            <ul type="disc"> 
+                <li>Abacate</li>
+                <li>Amendoas</li>
+                <li>Biscoito</li>
+                <li>pipoca</li>
+                <li>Nachos</li>
+            </ul>
+            irá organizar a festa 
+            <li>matheus</li>
+            <ul type="disc">
+                <li>Balão</li>
+                <li>Confete</li>
+            </ul>
+            <li>rose</li>
+            Escolher Filme: 
+            <ol type="1" start="1">
+                <li>Os incríveis</li>
+                <li>Toy story</li>
+                <li>Pequena sereia</li>
+            </ol>
+        </ol>
+    <br>
+        lista desordenada
+        <ul type="disc">
+            <li>maça</li>
+            <li>goiada</li>
+            <li>feijão</li>
+            <li>pipoca</li>
+            <li>milho</li>
+        </ul>
+    </p>
+</body>
+</html>     
