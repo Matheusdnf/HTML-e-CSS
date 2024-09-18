@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/*Compatibilidade com Asentos*/
+@import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
+@font-face {
+  font-family: "American";
+  src: url("font/American\ Captain.otf") format(opentype),
+    url("font/American\ Captain.ttf") format(truetype);
+}
+body {
+  background-image: -moz-linear-gradient(to right, white, white);
+  color: rgba(0, 0, 0, 0.642);
+  font-size: medium;
+  text-justify: none;
+}
+/*tag criada por mim é uma class de um tag já existente*/
+/*utilizando id*/
+
+#teste1 {
+  /*Envolve o conteúdo*/
+  width: 60px;
+  height: 30px;
+  background-color: yellow;
+  /*------*/
+  border: 20px solid red;
+  padding: 10px;
+  outline: 30px solid blue;
+  margin: 50px auto 25px;
+}
+
+/*utilizando class*/
+.teste:hover {
+  color: blue;
+  text-indent: 45px;
+  text-align: justify;
+  font-weight: bolder;
+}
+/*está mexendo no filho da tag teste*/
+/*quando está oculto*/
+.teste > p {
+  display: none;
+}
+
+/*pseu classe e filho*/
+/*quando aparece*/
+.teste:hover > p {
+  display: block;
+  color: yellow;
+  background-color: red;
+}
+/*característica de quando aparece*/
+.teste > p::after {
+  content: "[teste]";
+  color: black;
+}
+
+code {
+  text-align: center;
+}
+h1-modificado {
+  font-size: larger;
+  font-family: "Honk", Arial, Helvetica, sans-serif;
+  color: red;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(135, 135, 234);
+  border-radius: 10px;
+  width: 690px;
+  /*exemplo de shorthand*/
+  font: italic, bold, 100px, arial;
+  text-decoration: underline;
+}
+img {
+  box-shadow: 10px 10px 10px black;
+}
