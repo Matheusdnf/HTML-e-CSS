@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo HTML E CSS</title>
-    <link rel="shortcutsss icon" href="icones/pica.ico" type="image/x-icon">
+    <link rel="shortcutsss icon" href="icones/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <h1>Colocando algumas coisas em prática</h1>
     <hr><!---Linha horizontal-->
-    <p>Testando</p>
+    <p id="teste1" >
+        Testando
+    </p><br>
+    <div class="teste">
+        O CSS, assim como a tag da fonte, tem seus prós e contras. A vantagem mais significativa do uso do CSS é que ele é a maneira correta de mudar a cor da fonte e especificar todos os outros estilos para o seu site.
+        
+
+Como mencionado anteriormente, ele separa a apresentação do projeto, tornando seu código mais fácil de gerenciar e manter.
+
+Do lado negativo, CSS e HTML5 podem levar tempo para aprender e escrever corretamente em comparação com a antiga maneira de escrever código.
+
+Tenha em mente que com o CSS, você tem maneiras diferentes de mudar a cor da fonte, e cada um desses métodos tem seu próprio conjunto de prós e contras, como discutido anteriormente.
+<p>
+    Outro texto 
+</p>
+    </div><br>
     <p>Testando quebra de linha</p>
     <p>Listinha de compras:<br> &lt;Bansssana&gt; <br> Biscoito <br> Gelatina
     o da &rarr; <em><strong> é gay</strong></em> </p>
@@ -19,6 +36,7 @@
     <p>testando tags h<sub>2</sub>0 <br> algum número elevado a 2 4<sup>2</sup></p>
     <p><strong><del>abaixo será visto imagens:</del></strong></p>
     <p><img src="png/logojv2.png" alt="skate">  <img src="png/logojv2.png" alt="logo java script"> </p>
+    <main>
     <p><pre><code>
 void ler_telefone(char *telefone) {
     int t;
@@ -34,7 +52,7 @@ void ler_telefone(char *telefone) {
     }
 } while (t != 1);
 }
-    </code></pre></p>
+    </code></pre></p></main>
     <p><q>teste de citação comum</q></p>
     <p>Citação Direta </p>
     <blockquote cite="https://pt.stackoverflow.com/questions/330063/qual-%C3%A9-a-diferen%C3%A7a-entre-as-tags-q-blockquote-e-cite-no-html-e-como-as-u">
@@ -43,7 +61,7 @@ void ler_telefone(char *telefone) {
     <p>teste de abreviação <br> Testando um nome como teste:<abbr title="TUA MÂE NA MINHA CAMA">TMNC</abbr> </p>
     <p>Testando listas</p>
     <p>
-        <h2>lista ordenada</h2>
+        <h1-modificado>lista ordenada</h1-modificado>
         <ol type="1" start="1">
             <li>Vitoria</li>
             Irá comprar 
@@ -84,5 +102,19 @@ void ler_telefone(char *telefone) {
         <dt>GOD III </dt>
         <dd>GOD OF WAR 3 </dd>
     </dl>
+    <h2>Link Para Download</h2>
+    <a href="#">Baixar um pdf</a>
+    <h1>Adicionar Áudio</h1>
+    <audio preload="auto" controls autoplay>
+        <source src="teste_audio.mp3" type="audio/mpeg">
+        <p>caso n tenha conseguido reproduzir perdão </p>
+    </audio>
+    <h1>Como adicionar Vídeo vídeo locais</h1>
+    <video width="500" controls autoplay poster="teste de imagens/sadadad.jpg" >
+        <source src="teste_vídep.mp4" type="video/mp4">
+    </video>
+    <h1>Insergindo vídeo do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=S4_HCzlFoD96XuNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 </body>
 </html>     
