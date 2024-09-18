@@ -260,3 +260,81 @@ nav ul li {
     width: 500px;
   }
 }
+
+li .caixa {
+  display: inline-flex;
+  margin: auto;
+}
+
+.representacao_imagem {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+#botaonext {
+  width: 45px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  background-color: green;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.474);
+  display: flex;
+}
+
+li #botaonext {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+
+.lista-item {
+  background-color: rgba(255, 255, 255, 0.523);
+  padding: 2.5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.474);
+  border-radius: 10px;
+  width: 400px;
+  height: 250px;
+}
+
+.lista-item ul {
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  padding: auto;
+}
+.lista-item ul li {
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(152, 145, 145);
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.474);
+}
+
+.lista-item ul li:hover {
+  margin: 5px;
+  padding: 5px;
+  background-color: rgba(89, 89, 191, 0.725);
+}
+
+.lista-item ul li:hover {
+  list-style: circle;
+}
+
+#lista {
+  display: flex; /* Utiliza flexbox para alinhar as listas na mesma linha */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: flex-start; /* Alinha os itens ao topo se houver várias linhas */
+  gap: 30px; /* Espaço entre as listas */
+  flex-wrap: wrap; /* Permite que as listas se movam para a linha seguinte, se necessário */
+  padding: 20px; /* Espaçamento interno para não colar os itens nas bordas da tela */
+}
+
+#lista h1 {
+  text-align: center;
+}
