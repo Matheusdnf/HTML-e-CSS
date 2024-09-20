@@ -61,6 +61,7 @@ body {
   margin: auto; /* Centraliza o contêiner na página */
   flex-wrap: wrap; /* Permite que os botões se movam para a linha seguinte se não houver espaço suficiente */
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.474);
+  border-radius: 10px;
 }
 
 .botao {
@@ -261,15 +262,38 @@ nav ul li {
   }
 }
 
-li .caixa {
-  display: inline-flex;
-  margin: auto;
+#lista li {
+  display: flex;
+  align-items: center; /* Alinha o conteúdo do li verticalmente ao centro */
+  position: relative; /* Necessário para o uso de ::before */
+  padding-left: 20px; /* Espaço extra para evitar sobreposição com o marcador */
+  background-color: rgba(152, 145, 145, 0.8); /* Cor da caixa original */
+  border-radius: 10px;
+  width: 300px; /* Define a largura do item */
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.474);
+  margin: 10px 0;
+  list-style-type: none; /* Remove o marcador padrão do li */
+}
+
+.lista-item ul li::before {
+  content: ""; /* Não mostra nada inicialmente */
+  position: absolute; /* Para posicionar fora da caixa */
+  left: -20px; /* Marca a posição fora da caixa */
+}
+
+.lista-item ul li:hover::before {
+  content: ">"; /* Mostra o marcador apenas ao passar o mouse */
+  color: var(--black); /* Cor do marcador ao passar o mouse */
+  font-size: 20px; /* Tamanho do marcador */
+}
+
+#lista li:hover {
+  background-color: rgba(89, 89, 191, 0.725);
 }
 
 .representacao_imagem {
-  width: 30px;
-  height: 30px;
-  margin: auto;
+  width: 30px; /* Ajuste o tamanho da imagem como necessário */
+  height: auto;
 }
 
 #botaonext {
@@ -285,19 +309,12 @@ li .caixa {
   display: flex;
 }
 
-li #botaonext {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-}
-
 .lista-item {
   background-color: rgba(255, 255, 255, 0.523);
   padding: 2.5px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.474);
   border-radius: 10px;
   width: 400px;
-  height: 250px;
 }
 
 .lista-item ul {
@@ -306,24 +323,14 @@ li #botaonext {
   align-content: center;
   padding: auto;
 }
+
 .lista-item ul li {
-  list-style: none;
   margin: 5px;
   padding: 5px;
   background-color: rgb(152, 145, 145);
   border-radius: 10px;
   width: 300px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.474);
-}
-
-.lista-item ul li:hover {
-  margin: 5px;
-  padding: 5px;
-  background-color: rgba(89, 89, 191, 0.725);
-}
-
-.lista-item ul li:hover {
-  list-style: circle;
 }
 
 #lista {
